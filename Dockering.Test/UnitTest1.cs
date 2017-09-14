@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Xunit;
 
 namespace Dockering.Test
@@ -8,7 +9,9 @@ namespace Dockering.Test
         [Fact]
         public void Test1()
         {
-
+            var x = Enumerable.Range(1, 3).ToList();
+            
+            Assert.Equal(3, x.Count);
         }
     }
 }
