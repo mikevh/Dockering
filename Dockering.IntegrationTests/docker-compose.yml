@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  dockering:
+    image: my-registry:55000/dockering:ci-5
+    ports:
+      - "8080:80"
+  mail:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+  integration:
+    image: my-registry:55000/dockering:integration-5
+    build: .

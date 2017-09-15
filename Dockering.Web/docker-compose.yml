@@ -4,6 +4,11 @@ services:
   app:
     build:
       context: .
-    image: dockering.web
+    image: dockering
     ports:
       - "5000:80"
+
+  mail:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"

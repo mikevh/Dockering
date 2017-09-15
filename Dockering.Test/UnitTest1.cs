@@ -11,7 +11,7 @@ namespace Dockering.Test
         {
             var x = Enumerable.Range(1, 3).ToList();
             
-            Assert.Equal(3, x.Count);
+            Assert.Equal(3  , x.Count);
         }
     }
 }
